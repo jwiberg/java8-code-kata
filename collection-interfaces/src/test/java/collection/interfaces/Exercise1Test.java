@@ -64,8 +64,8 @@ public class Exercise1Test extends ClassicOnlineStore {
          * Create a {@link UnaryOperator} which returns given string wrapped with "()".
          * Replace the elements in {@link nameList} with string wrapped with "()" using {@link List#replaceAll} .
          */
-        UnaryOperator<Object> unaryOperator = null;
-        // nameList.
+        UnaryOperator<String> unaryOperator = name -> "(" + name + ")";
+        nameList.replaceAll(unaryOperator);
 
         assertThat(nameList.toString(), is("[(Joe), (Steven), (Patrick), (Chris)]"));
     }
@@ -79,8 +79,8 @@ public class Exercise1Test extends ClassicOnlineStore {
         /**
          * Create a {@link Comparator} to sort the name list by their name's length in ascending order.
          */
-        Comparator<Object> comparator = null;
-        // nameList.
+        Comparator<String> comparator = Comparator.comparingInt(name -> name.length());
+        nameList.sort(comparator);
 
         assertThat(nameList.toString(), is("[Joe, Chris, Steven, Patrick]"));
     }
