@@ -110,7 +110,7 @@ public class Exercise1Test extends ClassicOnlineStore {
         /**
          * Create a parallel {@link Stream} using {@link Collection#parallelStream} or {@link Stream#parallel}
          */
-        Stream<Object> nameParallelStream = null;
+        Stream<String> nameParallelStream = nameList.parallelStream();
 
         assertThat(nameParallelStream.count(), is(4L));
         assertThat(nameParallelStream.isParallel(), is(true));

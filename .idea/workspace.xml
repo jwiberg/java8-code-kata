@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44106ece-5dcf-44a9-bc47-48b3944540e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collection-interfaces/src/test/java/collection/interfaces/Exercise1Test.java" afterPath="$PROJECT_DIR$/collection-interfaces/src/test/java/collection/interfaces/Exercise1Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/date-and-time-api/target/" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="Exercise1Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/collection-interfaces/src/test/java/collection/interfaces/Exercise1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="28" />
+            <state relative-caret-position="60">
+              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -132,7 +131,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.Exercise1Test.createStream">
+  <component name="RunManager" selected="JUnit.Exercise1Test">
     <configuration default="false" name="Exercise1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -668,10 +667,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Exercise1Test.createStream" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Exercise1Test.sortByName" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Exercise1Test.replaceTheElements" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Exercise1Test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Exercise1Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Exercise1Test.createStream" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Exercise1Test.sortByName" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Exercise1Test.replaceTheElements" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.Exercise1Test.whoHaveNoEInYourName" />
       </list>
     </recent_temporary>
@@ -687,7 +686,7 @@
       <option name="presentableId" value="Default" />
       <updated>1485523122600</updated>
       <workItem from="1485523125330" duration="1083000" />
-      <workItem from="1485524361159" duration="1633000" />
+      <workItem from="1485524361159" duration="1681000" />
     </task>
     <servers />
   </component>
@@ -724,7 +723,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2716000" />
+    <option name="totallyTimeSpent" value="2764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
@@ -749,9 +748,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -824,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collection-interfaces/src/test/java/collection/interfaces/Exercise1Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
