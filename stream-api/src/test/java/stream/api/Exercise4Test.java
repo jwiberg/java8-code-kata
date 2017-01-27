@@ -37,7 +37,7 @@ public class Exercise4Test extends ClassicOnlineStore {
         /**
          * Check whether any customer older than 40 exists or not, by using {@link Stream#anyMatch}
          */
-        boolean olderThan40Exists = true;
+        boolean olderThan40Exists = customerList.stream().map(Customer::getAge).anyMatch(age -> age > 40);
 
         assertThat(olderThan40Exists, is(false));
     }
