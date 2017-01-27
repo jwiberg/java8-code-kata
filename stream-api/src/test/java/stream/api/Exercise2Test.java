@@ -29,7 +29,8 @@ public class Exercise2Test extends ClassicOnlineStore {
          * Create a stream with ascending ordered age values.
          * Use {@link Stream#sorted} to sort them.
          */
-        Stream<Integer> sortedAgeStream = customerList.stream().map(Customer::getAge).sorted(Integer::compareTo);
+        Stream<Integer> sortedAgeStream = customerList.stream()
+                .map(Customer::getAge).sorted(Integer::compareTo);
 
         List<Integer> sortedAgeList = sortedAgeStream.collect(Collectors.toList());
         assertThat(sortedAgeList, contains(21, 22, 22, 26, 27, 28, 32, 35, 36, 38));
@@ -60,7 +61,9 @@ public class Exercise2Test extends ClassicOnlineStore {
         /**
          * Create a stream with top 3 rich customers using {@link Stream#limit} to limit the size of the stream
          */
-        Stream<String> top3RichCustomerStream = null;
+        Stream<String> top3RichCustomerStream = customerList.stream().sorted(
+                Comparator.comparingInt(Customer::getBudget).reversed()
+        ).map(customer -> customer.getName()).limit(3);
 
         List<String> top3RichCustomerList = top3RichCustomerStream.collect(Collectors.toList());
         assertThat(top3RichCustomerList, contains("Diana", "Andrew", "Chris"));
