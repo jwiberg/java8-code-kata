@@ -11,11 +11,12 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class Exercise4Test extends ClassicOnlineStore {
 
-    @Easy @Test
+    @Easy
+    @Test
     public void firstRegistrant() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -23,12 +24,13 @@ public class Exercise4Test extends ClassicOnlineStore {
          * Find the first customer who registered this online store by using {@link Stream#findFirst}
          * The customerList are ascending ordered by registered timing.
          */
-        Optional<Customer> firstCustomer = null;
+        Optional<Customer> firstCustomer = customerList.stream().findFirst();
 
         assertThat(firstCustomer.get(), is(customerList.get(0)));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void isThereAnyoneOlderThan40() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -40,7 +42,8 @@ public class Exercise4Test extends ClassicOnlineStore {
         assertThat(olderThan40Exists, is(false));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void isEverybodyOlderThan20() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -52,7 +55,8 @@ public class Exercise4Test extends ClassicOnlineStore {
         assertThat(allOlderThan20, is(true));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void everyoneWantsSomething() {
         List<Customer> customerList = this.mall.getCustomerList();
 
