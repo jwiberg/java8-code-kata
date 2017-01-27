@@ -50,7 +50,7 @@ public class Exercise4Test extends ClassicOnlineStore {
         /**
          * Check whether all customer are older than 20 or not, by using {@link Stream#allMatch}
          */
-        boolean allOlderThan20 = false;
+        boolean allOlderThan20 = customerList.stream().map(Customer::getAge).allMatch(age -> age > 20);
 
         assertThat(allOlderThan20, is(true));
     }
@@ -64,7 +64,8 @@ public class Exercise4Test extends ClassicOnlineStore {
          * Confirm that none of the customer has empty list for their {@link Customer.wantToBuy}
          * by using {@link Stream#noneMatch}
          */
-        boolean everyoneWantsSomething = false;
+        boolean everyoneWantsSomething = customerList.stream().map(
+                customer -> customer.getWantToBuy().size()).allMatch(size -> size > 0);
 
         assertThat(everyoneWantsSomething, is(true));
     }
