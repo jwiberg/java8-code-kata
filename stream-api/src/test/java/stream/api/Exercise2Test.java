@@ -77,7 +77,7 @@ public class Exercise2Test extends ClassicOnlineStore {
         /**
          * Create a stream with distinct age values using {@link Stream#distinct}
          */
-        Stream<Integer> distinctAgeStream = null;
+        Stream<Integer> distinctAgeStream = customerList.stream().map(Customer::getAge).distinct();
 
         List<Integer> distinctAgeList = distinctAgeStream.collect(Collectors.toList());
         assertThat(distinctAgeList, contains(22, 27, 28, 38, 26, 32, 35, 21, 36));

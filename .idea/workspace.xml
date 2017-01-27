@@ -36,8 +36,8 @@
       <file leaf-file-name="Exercise2Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stream-api/src/test/java/stream/api/Exercise2Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="32" />
+            <state relative-caret-position="165">
+              <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -230,33 +230,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="SearchEverywhereHistoryKey" value="E&#9;PSI&#9;JAVA://collection.interfaces.Exercise2Test" />
   </component>
-  <component name="RunManager" selected="JUnit.Exercise2Test.top3RichCustomer">
-    <configuration default="false" name="Exercise1Test.findRichCustomers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stream.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="stream-api" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="stream.api" />
-      <option name="MAIN_CLASS_NAME" value="stream.api.Exercise1Test" />
-      <option name="METHOD_NAME" value="findRichCustomers" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Exercise2Test.distinctAge">
     <configuration default="false" name="Exercise1Test.howOldAreTheCustomers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -348,6 +322,32 @@
       <option name="PACKAGE_NAME" value="stream.api" />
       <option name="MAIN_CLASS_NAME" value="stream.api.Exercise2Test" />
       <option name="METHOD_NAME" value="top3RichCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Exercise2Test.distinctAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="stream.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="stream-api" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="stream.api" />
+      <option name="MAIN_CLASS_NAME" value="stream.api.Exercise2Test" />
+      <option name="METHOD_NAME" value="distinctAge" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -758,19 +758,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Exercise1Test.findRichCustomers" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Exercise1Test.howOldAreTheCustomers" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Exercise2Test.sortByAge" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Exercise2Test.descSortByAge" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Exercise2Test.top3RichCustomer" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Exercise1Test.howOldAreTheCustomers" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Exercise2Test.sortByAge" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Exercise2Test.descSortByAge" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Exercise2Test.top3RichCustomer" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Exercise2Test.distinctAge" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Exercise2Test.top3RichCustomer" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Exercise2Test.descSortByAge" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Exercise2Test.sortByAge" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Exercise1Test.howOldAreTheCustomers" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Exercise1Test.findRichCustomers" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Exercise2Test.distinctAge" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Exercise2Test.top3RichCustomer" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Exercise2Test.descSortByAge" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Exercise2Test.sortByAge" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Exercise1Test.howOldAreTheCustomers" />
       </list>
     </recent_temporary>
   </component>
@@ -785,14 +785,11 @@
       <option name="presentableId" value="Default" />
       <updated>1485523122600</updated>
       <workItem from="1485523125330" duration="1083000" />
-      <workItem from="1485524361159" duration="6127000" />
+      <workItem from="1485524361159" duration="6352000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Exercise1Test_findRichCustomers - 2017.01.27 at 16h 48m 06s.xml">
-      <configuration name="Exercise1Test.findRichCustomers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Exercise1Test_findRichCustomers - 2017.01.27 at 16h 48m 29s.xml">
       <configuration name="Exercise1Test.findRichCustomers" configurationId="JUnit" />
     </history-entry>
@@ -820,9 +817,12 @@
     <history-entry file="Exercise2Test_top3RichCustomer - 2017.01.27 at 17h 21m 20s.xml">
       <configuration name="Exercise2Test.top3RichCustomer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Exercise2Test_top3RichCustomer - 2017.01.27 at 17h 23m 01s.xml">
+      <configuration name="Exercise2Test.top3RichCustomer" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7210000" />
+    <option name="totallyTimeSpent" value="7435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
@@ -847,9 +847,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -979,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stream-api/src/test/java/stream/api/Exercise2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="32" />
+        <state relative-caret-position="165">
+          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="27" />
           <folding />
         </state>
       </provider>
