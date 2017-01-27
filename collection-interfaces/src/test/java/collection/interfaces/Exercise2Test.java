@@ -43,8 +43,8 @@ public class Exercise2Test {
         /**
          * Try to put 2 entry with key as "Alice" value as 32, key as "Joe" and value as 32 using {@link Map#putIfAbsent}.
          */
-        // map.
-        // map.
+        map.putIfAbsent("Alice", 32);
+        map.putIfAbsent("Joe", 32);
 
         assertThat(map.get("Alice"), is(32));
         assertThat(map.get("Joe"), is(22));
