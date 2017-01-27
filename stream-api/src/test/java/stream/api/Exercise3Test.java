@@ -57,8 +57,8 @@ public class Exercise3Test extends ClassicOnlineStore {
          * Find the youngest customer by using {@link Stream#min}
          * Don't use {@link Stream#sorted}
          */
-        Comparator<Customer> comparator = null;
-        Optional<Customer> youngestCustomer = null;
+        Comparator<Customer> comparator = Comparator.comparingInt(customer -> customer.getAge());
+        Optional<Customer> youngestCustomer = customerList.stream().min(comparator);
 
         assertThat(youngestCustomer.get(), is(customerList.get(8)));
     }
