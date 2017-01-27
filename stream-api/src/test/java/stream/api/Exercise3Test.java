@@ -12,23 +12,27 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class Exercise3Test extends ClassicOnlineStore {
 
-    @Easy @Test
+    @Easy
+    @Test
     public void howManyItemsWanted() {
         List<Customer> customerList = this.mall.getCustomerList();
 
         /**
          * Count how many items there are in {@link Customer.wantToBuy} using {@link Stream#count}
          */
-        long sum = 0L;
+        long sum = customerList.stream()
+                .flatMap(customer -> customer.getWantToBuy().stream()).count();
+
 
         assertThat(sum, is(32L));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void richestCustomer() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -43,7 +47,8 @@ public class Exercise3Test extends ClassicOnlineStore {
         assertThat(richestCustomer.get(), is(12000));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void youngestCustomer() {
         List<Customer> customerList = this.mall.getCustomerList();
 
