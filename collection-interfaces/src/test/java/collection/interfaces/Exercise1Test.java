@@ -95,7 +95,7 @@ public class Exercise1Test extends ClassicOnlineStore {
          * Create a serial {@link Stream} using {@link Collection#stream}
          * You can learn about {@link Stream} APIs at stream-api module.
          */
-        Stream<Object> nameStream = null;
+        Stream<String> nameStream = nameList.stream();
 
         assertThat(nameStream.count(), is(4L));
         assertThat(nameStream.isParallel(), is(false));
