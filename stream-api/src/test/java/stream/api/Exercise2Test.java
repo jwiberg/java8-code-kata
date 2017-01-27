@@ -43,8 +43,9 @@ public class Exercise2Test extends ClassicOnlineStore {
         /**
          * Create a stream with descending ordered age values.
          */
-        Comparator<Integer> descOrder = null;
-        Stream<Integer> sortedAgeStream = null;
+        Comparator<Integer> descOrder = Comparator.comparingInt(age -> age);
+        Stream<Integer> sortedAgeStream = customerList.stream().map(Customer::getAge).sorted(
+                descOrder.reversed());
 
         assertTrue(AssertUtil.isLambda(descOrder));
         List<Integer> sortedAgeList = sortedAgeStream.collect(Collectors.toList());
