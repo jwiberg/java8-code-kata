@@ -59,9 +59,9 @@ public class Exercise2Test {
          * Merge 2 entry to {@link map} with key="Alice" value=32, key="Joe" value=32 using {@link Map#merge}.
          * If the value already exist for the key, remap with sum value.
          */
-        BiFunction<Object, Object, Integer> remappingFunction = null;
-        // map.
-        // map.
+        BiFunction<Integer, Integer, Integer> remappingFunction = (k, v) -> k == null ? v : v + k;
+        map.merge("Alice", 32, remappingFunction);
+        map.merge("Joe", 32, remappingFunction);
 
         assertThat(map.get("Alice"), is(32));
         assertThat(map.get("Joe"), is(54));
