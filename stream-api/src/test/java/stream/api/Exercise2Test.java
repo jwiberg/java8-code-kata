@@ -15,11 +15,13 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class Exercise2Test extends ClassicOnlineStore {
 
-    @Easy @Test
+    @Easy
+    @Test
     public void sortByAge() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -27,13 +29,14 @@ public class Exercise2Test extends ClassicOnlineStore {
          * Create a stream with ascending ordered age values.
          * Use {@link Stream#sorted} to sort them.
          */
-        Stream<Integer> sortedAgeStream = null;
+        Stream<Integer> sortedAgeStream = customerList.stream().map(Customer::getAge).sorted(Integer::compareTo);
 
         List<Integer> sortedAgeList = sortedAgeStream.collect(Collectors.toList());
         assertThat(sortedAgeList, contains(21, 22, 22, 26, 27, 28, 32, 35, 36, 38));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void descSortByAge() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -48,7 +51,8 @@ public class Exercise2Test extends ClassicOnlineStore {
         assertThat(sortedAgeList, contains(38, 36, 35, 32, 28, 27, 26, 22, 22, 21));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void top3RichCustomer() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -61,7 +65,8 @@ public class Exercise2Test extends ClassicOnlineStore {
         assertThat(top3RichCustomerList, contains("Diana", "Andrew", "Chris"));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void distinctAge() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -74,7 +79,8 @@ public class Exercise2Test extends ClassicOnlineStore {
         assertThat(distinctAgeList, contains(22, 27, 28, 38, 26, 32, 35, 21, 36));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void itemsCustomersWantToBuy() {
         List<Customer> customerList = this.mall.getCustomerList();
 
@@ -88,9 +94,9 @@ public class Exercise2Test extends ClassicOnlineStore {
         assertTrue(AssertUtil.isLambda(getItemStream));
         List<String> itemList = itemStream.collect(Collectors.toList());
         assertThat(itemList,
-                   contains("small table", "plate", "fork", "ice cream", "screwdriver", "cable", "earphone", "onion",
-                            "ice cream", "crisps", "chopsticks", "cable", "speaker", "headphone", "saw", "bond",
-                            "plane", "bag", "cold medicine", "chair", "desk", "pants", "coat", "cup", "plate", "fork",
-                            "spoon", "ointment", "poultice", "spinach", "ginseng", "onion"));
+                contains("small table", "plate", "fork", "ice cream", "screwdriver", "cable", "earphone", "onion",
+                        "ice cream", "crisps", "chopsticks", "cable", "speaker", "headphone", "saw", "bond",
+                        "plane", "bag", "cold medicine", "chair", "desk", "pants", "coat", "cup", "plate", "fork",
+                        "spoon", "ointment", "poultice", "spinach", "ginseng", "onion"));
     }
 }
