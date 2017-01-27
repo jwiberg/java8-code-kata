@@ -17,11 +17,12 @@ import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class Exercise1Test extends ClassicOnlineStore {
 
-    @Easy @Test
+    @Easy
+    @Test
     public void iterateByForEach() {
         Iterable<Customer> customerIterable = this.mall.getCustomerList();
         List<String> nameList = new ArrayList<>();
@@ -31,16 +32,17 @@ public class Exercise1Test extends ClassicOnlineStore {
          * Iterate {@link customerIterable} with {@link Iterable#forEach} and use the {@link Consumer}
          * to finish creating the name list.
          */
-        Consumer<Object> consumer = null;
-        // customerIterable.
+        Consumer<Customer> consumer = customer -> nameList.add(customer.getName());
+        customerIterable.forEach(name -> consumer.accept(name));
 
         assertThat(nameList.toString(), is("[Joe, Steven, Patrick, Diana, Chris, Kathy, Alice, Andrew, Martin, Amy]"));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void whoHaveNoEInYourName() {
         Collection<String> nameCollection =
-            new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
+                new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
 
         /**
          * Create a {@link Predicate} which predicates if the input string contains "e".
@@ -52,10 +54,11 @@ public class Exercise1Test extends ClassicOnlineStore {
         assertThat(nameCollection.toString(), is("[Patrick, Chris]"));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void replaceTheElements() {
         List<String> nameList =
-            new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
+                new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
 
         /**
          * Create a {@link UnaryOperator} which returns given string wrapped with "()".
@@ -67,10 +70,11 @@ public class Exercise1Test extends ClassicOnlineStore {
         assertThat(nameList.toString(), is("[(Joe), (Steven), (Patrick), (Chris)]"));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void sortByName() {
         List<String> nameList =
-            new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
+                new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
 
         /**
          * Create a {@link Comparator} to sort the name list by their name's length in ascending order.
@@ -81,10 +85,11 @@ public class Exercise1Test extends ClassicOnlineStore {
         assertThat(nameList.toString(), is("[Joe, Chris, Steven, Patrick]"));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void createStream() {
         Collection<String> nameList =
-            new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
+                new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
 
         /**
          * Create a serial {@link Stream} using {@link Collection#stream}
@@ -96,10 +101,11 @@ public class Exercise1Test extends ClassicOnlineStore {
         assertThat(nameStream.isParallel(), is(false));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void createParallelStream() {
         Collection<String> nameList =
-            new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
+                new ArrayList<>(Arrays.asList("Joe", "Steven", "Patrick", "Chris"));
 
         /**
          * Create a parallel {@link Stream} using {@link Collection#parallelStream} or {@link Stream#parallel}
