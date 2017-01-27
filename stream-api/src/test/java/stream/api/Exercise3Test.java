@@ -40,8 +40,9 @@ public class Exercise3Test extends ClassicOnlineStore {
          * Find the richest customer's budget by using {@link Stream#max} and {@link Comparator#naturalOrder}
          * Don't use {@link Stream#sorted}
          */
-        Comparator<Integer> comparator = null;
-        Optional<Integer> richestCustomer = null;
+        Comparator<Integer> comparator = Comparator.naturalOrder();
+        Optional<Integer> richestCustomer = customerList.stream().map(customer -> customer.getBudget()).max(
+                comparator);
 
         assertThat(comparator.getClass().getSimpleName(), is("NaturalOrderComparator"));
         assertThat(richestCustomer.get(), is(12000));
