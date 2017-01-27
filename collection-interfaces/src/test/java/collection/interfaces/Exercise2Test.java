@@ -11,7 +11,7 @@ import java.util.function.BiFunction;
 import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class Exercise2Test {
 
@@ -22,19 +22,21 @@ public class Exercise2Test {
         put("Chris", 26);
     }};
 
-    @Easy @Test
+    @Easy
+    @Test
     public void getDefaultValue() {
         Map<String, Integer> map = new HashMap<>(this.map);
 
         /**
          * Try to get from key "Alice" using {@link Map#getOrDefault}. If the key doesn't exist, use 30 as default.
          */
-        Integer defaultVal = null;
+        Integer defaultVal = map.getOrDefault("Alice", 30);
 
         assertThat(defaultVal, is(30));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void putIfNotExisting() {
         Map<String, Integer> map = new HashMap<>(this.map);
 
@@ -48,7 +50,8 @@ public class Exercise2Test {
         assertThat(map.get("Joe"), is(22));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void mergeValues() {
         Map<String, Integer> map = new HashMap<>(this.map);
 
@@ -64,7 +67,8 @@ public class Exercise2Test {
         assertThat(map.get("Joe"), is(54));
     }
 
-    @Easy @Test
+    @Easy
+    @Test
     public void ignoringAbsentKeys() {
         Map<String, Integer> map = new HashMap<>(this.map);
 
